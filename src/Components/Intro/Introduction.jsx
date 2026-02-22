@@ -24,7 +24,7 @@ export default function Introduction() {
         setCurrentTheme(e.target.id)
     }
 
-    const headingColor = useColorModeValue('teal.500', 'teal.300');
+
     const stepTextColor = useColorModeValue('gray.700', 'gray.300');
     const templateBorderColor = useColorModeValue('gray.100', 'gray.700');
     const templateBg = useColorModeValue('white', 'gray.800');

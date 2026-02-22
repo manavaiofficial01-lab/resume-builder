@@ -127,8 +127,8 @@ const UserDataCollect = () => {
     }
 
     useEffect(() => {
-        setThemeData({ ...themeData, personalData, projectData, educationData, workData, awardData })
-    }, [personalData, projectData, educationData, workData, awardData])
+        setThemeData(prev => ({ ...prev, personalData, projectData, educationData, workData, awardData }))
+    }, [personalData, projectData, educationData, workData, awardData, setThemeData])
 
     const FormSection = ({ title, children, toggleShow, isChecked }) => (
         <Box bg={sectionBg} p={5} borderRadius="xl" border="1px solid" borderColor={borderColor} mb={6} shadow="sm">
